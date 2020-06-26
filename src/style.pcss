@@ -1,0 +1,56 @@
+
+@tailwind base;
+
+/* major-mono-display-regular - latin */
+@font-face {
+  font-family: 'Major Mono Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Major Mono Display Regular'), local('MajorMonoDisplay-Regular'),
+       url('./fonts/major-mono-display-v4-latin-regular.woff2') format('woff2');
+}
+
+
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('./fonts/open-sans-v17-latin-300.woff2') format('woff2');
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('./fonts/open-sans-v17-latin-regular.woff2') format('woff2');
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('./fonts/open-sans-v17-latin-600.woff2') format('woff2');
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+.field {
+    @apply .rounded .border .py-2 .px-3 .text-black-800;
+}
+
+.field-label {
+    @apply .mb-2 .uppercase .font-bold .text-lg .text-black-900;
+}
+
+.field-group {
+    @apply .flex .flex-col .mb-4;
+}
